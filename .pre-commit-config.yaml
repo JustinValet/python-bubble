@@ -1,4 +1,11 @@
 repos:
+-   repo: https://github.com/psf/black
+    rev: stable
+    hooks:
+    - id: black
+      language_version: python3
+      args: 
+      - --line-length=110
 -   repo: https://github.com/pycqa/flake8
     rev: 4.0.1
     hooks:
